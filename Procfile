@@ -1,1 +1,1 @@
-worker: python horoscope_bot.py
+worker: python main.py
