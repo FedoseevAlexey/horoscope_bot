@@ -1,5 +1,5 @@
 import telebot
-from telebot import types
+
 import os
 import random
 
@@ -41,19 +41,19 @@ def get_text_message(message):
         bot.send_message(message.from_user.id, "Привет, сейчас я покажу тебе гороскоп на сегодня.")
 
         # Создаем и добавляем кнопки.
-        keyboard = types.InlineKeyboardMarkup()
-        key_oven = types.InlineKeyboardButton(text="Овен", callback_data="zodiac")
-        key_telec = types.InlineKeyboardButton(text="Телец", callback_data="zodiac")
-        key_bliznecy = types.InlineKeyboardButton(text="Близнецы", callback_data="zodiac")
-        key_rak = types.InlineKeyboardButton(text="Рак", callback_data="zodiac")
-        key_lev = types.InlineKeyboardButton(text="Лев", callback_data="zodiac")
-        key_deva = types.InlineKeyboardButton(text="Дева", callback_data="zodiac")
-        key_vesy = types.InlineKeyboardButton(text="Весы", callback_data="zodiac")
-        key_scorpion = types.InlineKeyboardButton(text="Скорпион", callback_data="zodiac")
-        key_strelec = types.InlineKeyboardButton(text="Стрелец", callback_data="zodiac")
-        key_kozerog = types.InlineKeyboardButton(text="Козерог", callback_data="zodiac")
-        key_vodoley = types.InlineKeyboardButton(text="Водолей", callback_data="zodiac")
-        key_ryby = types.InlineKeyboardButton(text="Рыбы", callback_data="zodiac")
+        keyboard = telebot.types.InlineKeyboardMarkup()
+        key_oven = telebot.types.InlineKeyboardButton(text="Овен", callback_data="zodiac")
+        key_telec = telebot.types.InlineKeyboardButton(text="Телец", callback_data="zodiac")
+        key_bliznecy = telebot.types.InlineKeyboardButton(text="Близнецы", callback_data="zodiac")
+        key_rak = telebot.types.InlineKeyboardButton(text="Рак", callback_data="zodiac")
+        key_lev = telebot.types.InlineKeyboardButton(text="Лев", callback_data="zodiac")
+        key_deva = telebot.types.InlineKeyboardButton(text="Дева", callback_data="zodiac")
+        key_vesy = telebot.types.InlineKeyboardButton(text="Весы", callback_data="zodiac")
+        key_scorpion = telebot.types.InlineKeyboardButton(text="Скорпион", callback_data="zodiac")
+        key_strelec = telebot.types.InlineKeyboardButton(text="Стрелец", callback_data="zodiac")
+        key_kozerog = telebot.types.InlineKeyboardButton(text="Козерог", callback_data="zodiac")
+        key_vodoley = telebot.types.InlineKeyboardButton(text="Водолей", callback_data="zodiac")
+        key_ryby = telebot.types.InlineKeyboardButton(text="Рыбы", callback_data="zodiac")
 
         keyboard.add(key_oven)
         keyboard.add(key_telec)
