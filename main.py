@@ -1,9 +1,11 @@
 import telebot
 from telebot import types
-
+import os
 import random
 
-# bot = telebot.TeleBot('TOKEN')
+token = os.environ.get('BOT_TOKEN')
+
+bot = telebot.TeleBot(token)
 
 # Заготовки предложений
 first = ["Сегодня — идеальный день для новых начинаний. ",
